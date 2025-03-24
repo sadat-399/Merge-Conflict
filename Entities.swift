@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Article
 struct Article {
     var id: Int
     var title: String
