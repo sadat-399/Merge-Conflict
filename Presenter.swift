@@ -7,6 +7,15 @@
 
 import Foundation
 
+// MARK: PROTOCOLS
+protocol ViewInput: class {
+    func displayArticles(_ articles: [Article])
+}
+
+protocol ViewOutput {
+    func fetchArticles()
+}
+
 class Presenter: ViewOutput, InteractorOutput {
     // MARK: PROPERTIES
     var view: ViewInput?
