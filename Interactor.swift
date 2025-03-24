@@ -7,6 +7,11 @@
 
 import Foundation
 
+// MARK: InteractorInput
+protocol InteractorInput {
+    func fetchArticles()
+}
+
 class Interactor: InteractorInput {
     weak var presenter: InteractorOutput?
 
