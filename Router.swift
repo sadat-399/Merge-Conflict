@@ -13,7 +13,16 @@ import Foundation
 // It will have the logic to create the next view controller
 // It will have the logic to present the next view controller
 class Router: RouterInput {
+    // MARK: PROPERTIES
+    weak var view: ViewInput?
+    // MARK: FUNCTIONS
     func showArticleDetail(from view: ViewInput, for article: Article) {
+        // Create article detail module and present it
+    }
+    // MARK: FUNCTIONS
+    func showArticleDetail(from view: ViewInput, for article: Article) {
+        // Create article detail module and present it
+
         if let view = view as? ArticleListView {
             view.showArticleDetail(article: article)
         }
